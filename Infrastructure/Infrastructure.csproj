@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Plugins\CountDown\CountDown.csproj" />
+	<ProjectReference Include="..\Plugins\CountDown\CountDown.csproj" />
     <ProjectReference Include="..\Plugins\Counter\Counter.csproj" />
     <ProjectReference Include="..\Plugins\CountWords\CountTheWords.csproj" />
     <ProjectReference Include="..\Plugins\CountWord\CountWordPlugin.csproj" />
@@ -14,6 +14,7 @@
     <ProjectReference Include="..\Plugins\List\ListPlugin.csproj" />
     <ProjectReference Include="..\Shared\BasePlugin\BasePlugin.csproj" />
     <ProjectReference Include="..\Shared\Dal\Dal\Dal.csproj" />
+    <ProjectReference Include="..\SubtractionGame\SubtractionGame.csproj" />
   </ItemGroup>
 
 </Project>

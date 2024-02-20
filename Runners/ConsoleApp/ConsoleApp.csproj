@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Dals\Dals.csproj" />
+	<ProjectReference Include="..\..\SubtractionGame\SubtractionGame.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj" />
     <ProjectReference Include="..\..\Plugins\CountDown\CountDown.csproj" />
     <ProjectReference Include="..\..\Plugins\DiceRoller\DiceRoller.csproj" />

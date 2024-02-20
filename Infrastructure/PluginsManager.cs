@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SubtractionGame;
 
 namespace Infrastructure
 {
@@ -44,13 +45,15 @@ namespace Infrastructure
                 return new CountTheWordsPlugin();
             }
 
-
             else if (id == CountWordPlugin._Id)
             {
                 return new CountWordPlugin();
             }
+            else if (id == SubtractionGame._Id)
+            {
+                return new SubtractionGame();
+            }
             else
-
             {
                 throw new NotImplementedException();
             }
@@ -62,9 +65,12 @@ namespace Infrastructure
             CountDownPlugin._Id,
             CounterPlugin._Id,
             EchoPlugin._Id,
+            SubtractionGame._Id,
             ListPlugin.ListPlugin._Id,
             CountTheWordsPlugin._Id,
             CountWordPlugin._Id
         };
+
+        public static object SubtractionGame { get; private set; }
     }
 }
