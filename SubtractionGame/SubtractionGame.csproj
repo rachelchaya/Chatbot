@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\BasePlugin\BasePlugin.csproj" />
+  </ItemGroup>
+
 </Project>

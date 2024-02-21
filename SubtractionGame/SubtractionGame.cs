@@ -1,8 +1,12 @@
 ﻿using BasePlugin.Interfaces;
-
+using System;
 class SubtractionGame 
 {
-    public CountDownPlugin(IScheduler scheduler) => _scheduler = scheduler;
+    IScheduler _scheduler;
+
+    public SubtractionGame(IScheduler scheduler) => _scheduler = scheduler;
+    public static string _Id = "SubtractionGame";
+    public string Id => _Id;
     public SubtractionGame()
     {
         Random random = new Random();

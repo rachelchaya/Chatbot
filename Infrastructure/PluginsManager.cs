@@ -70,7 +70,5 @@ namespace Infrastructure
             CountTheWordsPlugin._Id,
             CountWordPlugin._Id
         };
-
-        public static object SubtractionGame { get; private set; }
     }
 }
