@@ -15,6 +15,7 @@ namespace Infrastructure
         public Action EndSession { get; set; }
     }
 
+
     public class PluginExecutor
     {
         const string SESSION_PLUGIN_ID = "SESSION_PLUGIN_ID";

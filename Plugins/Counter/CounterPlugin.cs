@@ -11,9 +11,17 @@ namespace Counter
 
         public PluginOutput Execute(PluginInput input)
         {
-            var lastCount = int.Parse(input.PersistentData);
-            var result = (lastCount + 1).ToString();
-            return new PluginOutput(result, result);
+
+            if(input.PersistentData != null)
+            {
+                var lastCount = int.Parse(input.PersistentData);
+                var result = (lastCount + 1).ToString();
+                return new PluginOutput(result, result);
+            }
+            else
+            {
+                return new PluginOutput("Error: Input format is not valid", "Error");
+            }
         }
     }
 }
