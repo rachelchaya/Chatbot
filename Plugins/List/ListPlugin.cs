@@ -81,6 +81,7 @@ namespace ListPlugin
 
                         return new PluginOutput($"Delete  task: {name}", JsonSerializer.Serialize(data));
                     }
+                    else
                     return new PluginOutput(ex.Message);
                 }
               
